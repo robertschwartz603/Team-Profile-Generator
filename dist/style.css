@@ -1,0 +1,8 @@
+/* CUSTOM STYLING GOES HERE */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px;
+    padding: 12px;
+}
