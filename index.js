@@ -245,12 +245,3 @@ const buildTeam = () => {
 }
 //initiates prompt again
 promptManager();
-
-
-//================================================
-//scrap code
-
-// if (!fs.existsSync(Export_DIR)) {
-    //     fs.mkdirSync(Export_DIR)
-    // }
-    // fs.writeFileSync(exportPath, createSite(team), "utf-8");
