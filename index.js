@@ -76,23 +76,19 @@ const promptManager = () => {
 };
 
 const promptOptions = () => {
-    return inquirer.prompt([
+    inquirer.prompt([
         {
             type: 'list',
-            name: 'options',
+            name: 'menu',
             message: 'What would you like to do next?',
             choices: ['add engineer', 'add intern', 'complete team']
-        }]).then(selectedOption => {
-            switch (selectedOption.menu) {
-                case "add engineer":
-                    promptEngineer();
-                    break;
-                case "add intern":
-                    promptIntern();
-                    break;
-                default:
-                    buildTeam();
-            }
+        }])
+        .then(selectedOption => {
+            if (selectedOption.menu == "add engineer") {
+                promptEngineer();
+            } else if (selectedOption.menu == "add intern") {
+                promptIntern();
+            } else if (buildTeam());
         });
 };
 
@@ -159,7 +155,7 @@ const promptEngineer = () => {
         },
     ]).then(answers => {
         console.log(answers);
-        const engineer = new Manager(answers.name, answers.employeeId, answers.email, answers.github);
+        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.github);
         team.push(engineer);
         promptOptions();
     })
@@ -228,7 +224,7 @@ const promptIntern = () => {
         },
     ]).then(answers => {
         console.log(answers);
-        const intern = new Manager(answers.name, answers.employeeId, answers.email, answers.school);
+        const intern = new Intern(answers.name, answers.employeeId, answers.email, answers.school);
         team.push(intern);
         promptOptions();
     })
@@ -245,7 +241,7 @@ const buildTeam = () => {
 
     fs.writeFile('./src/index.html', createSite(team), (err) => err ? console.error(err) : console.log('Success!'));
 
-    
+
 }
 //initiates prompt again
 promptManager();

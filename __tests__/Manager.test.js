@@ -25,10 +25,10 @@ it('should get the email from the getEmail() method', () => {
 
 //tests for an email output from getOfficeNumber() method.
 it('should get the email from the getOfficeNumber() method', () => {
-  expect(manager.getSchool()).toBe('456');
+  expect(manager.getOfficeNumber()).toBe('456');
 });
 
 //tests for Role output from getRole() method.
 it('should get the role from the getRole() method', () => {
-  expect(manager.getEmail()).toBe('Manager');
+  expect(manager.getRole()).toBe('Manager');
 });

@@ -23,12 +23,12 @@ it('should get the email from the getEmail() method', () => {
   expect(intern.getEmail()).toBe('bevhills90210@gmail.com');
 });
 
-//tests for an email output from getSchool() method.
-it('should get the email from the getSchool() method', () => {
+//tests for an school output from getSchool() method.
+it('should get the school from the getSchool() method', () => {
   expect(intern.getSchool()).toBe('UNH');
 });
 
 //tests for Role output from getRole() method.
 it('should get the role from the getRole() method', () => {
-  expect(intern.getEmail()).toBe('Intern');
+  expect(intern.getRole()).toBe('Intern');
 });

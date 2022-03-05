@@ -24,11 +24,11 @@ it('should get the email from the getEmail() method', () => {
 });
 
 //tests for an email output from getGithub() method.
-it('should get the email from the getGithub() method', () => {
+it('should get the github from the getGithub() method', () => {
   expect(engineer.getGithub()).toBe('beverlyGit902');
 });
 
 //tests for Role output from getRole() method.
 it('should get the role from the getRole() method', () => {
-  expect(engineer.getEmail()).toBe('Engineer');
+  expect(engineer.getRole()).toBe('Engineer');
 });

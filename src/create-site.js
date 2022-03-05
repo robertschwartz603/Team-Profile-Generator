@@ -1,7 +1,7 @@
 //create-site file
 const createTeam = (team) => {
     console.log(team);
-    const teamHTML = []
+    const html = [];
 
 
     //manager template
@@ -37,7 +37,7 @@ const createTeam = (team) => {
     <div class="card-body">
         <p class="card-text">ID: ${engineer.id}</p>
         <a href="mailto:${engineer.email}" class="card-link">${engineer.email}</a>
-        <a href="https://github.com/${engineer.githubUser}" class="card-link">GitHub: ${engineer.githubUser}</a>
+        <a href="https://github.com/${engineer.githubUser}" class="card-link"> GitHub: ${engineer.githubUser}</a>
     </div>
 </div>
 <!-- end of generated card -->`
@@ -52,7 +52,7 @@ const createTeam = (team) => {
 <div class="card m-4" style="width: 18rem;">
     <div class="card-header">
         <h5 class="card-title">${intern.name}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
     </div>
     <div class="card-body">
         <p class="card-text">ID: ${intern.id}</p>
