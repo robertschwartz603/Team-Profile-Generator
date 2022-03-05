@@ -40,4 +40,8 @@ This product has been tested with multiple imputs and various team options. a ne
 
 Github: https://github.com/robertschwartz603
 
+<<<<<<< HEAD
 Email: robertschwartz603@gmail.com
+=======
+Email: robertschwartz603@gmail.com
+>>>>>>> e0d0b3eee4e2f79129e9b4160b1904ab6a8a5987
