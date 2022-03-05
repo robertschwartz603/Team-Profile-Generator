@@ -7,7 +7,7 @@ This project required building a Node.js command-line app that takes input about
 
 When prompted for team members and their information, then an HTML is generated that displays a nicely formatted team roster based on user input.
 
-You can find a video walkthrough of this program here: 
+You can find a video walkthrough of this program here: https://www.youtube.com/watch?v=6lsk_C2n0TM
 
 ## Table of Contents
 - [Description](#description)
